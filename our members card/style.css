@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    cursor: url('https://img.icons8.com/plumpy/30/000000/cursor.png'), auto;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #242425;
+    cursor: url('https://img.icons8.com/plumpy/30/000000/cursor.png'), auto;
+
+}
+
+#mains {
+    position: static;
+}
+
+#mains::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#F00, #F0f);
+    clip-path: circle(30% at right 70%);
+}
+
+#mains::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgb(26, 181, 228), #F0f);
+    clip-path: circle(20% at 10% 10%);
+}
+
+
+.container {
+
+    position: relative;
+    z-index: 1;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+    margin-left: 100px;
+
+}
+
+.container .card {
+    position: relative;
+    width: 300px;
+    height: 450px;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    border-top: 0.5px solid  rgba(255,255,255,0.5);
+    border-left: 0.5px solid  rgba(255,255,255,0.5);
+    backdrop-filter: blur(5px);
+}
+
+
+.container .card .content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.5;
+    transition: 0.5s;
+
+}
+
+.container .card:hover .content {
+    opacity: 1;
+    transform: translateY(-30px);
+
+}
+
+.container .card .content .imagebox {
+    position: relative;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 20px solid rgba(0, 0, 0, 0);
+}
+
+
+.container .card .content .imagebox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.container .card .content .imagebox h3 {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 10px;
+
+}
+
+.contentbox h3 {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 10px;
+
+}
+
+
+.container .card .content .imagebox h3 span {
+    font-size: 12px;
+    font-weight: 100;
+    text-transform: initial;
+}
+
+.contentbox h3 span {
+    font-size: 12px;
+    font-weight: 100;
+    text-transform: initial;
+
+}
+
+
+
+
+.container .card .sci {
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+
+}
+
+
+
+.container .card .sci li {
+    list-style: none;
+    margin: 0 10px;
+    transform: translate(40px);
+    transition: 0.5s;
+    opacity: 0;
+    transition-delay: calc(0.1s * var(--i));
+
+}
+
+
+.container .card:hover .sci li {
+    transform: translate(0px);
+    opacity: 1;
+}
+
+#contactme {
+    margin-top: 80%;
+    width: 148px;
+    height: 34px;
+    background: #F53558;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 60px;
+    border: none;
+    color: white;
+    cursor: url('https://img.icons8.com/plumpy/24/000000/hand-cursor.png'), auto;
+}
