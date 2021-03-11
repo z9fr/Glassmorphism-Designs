@@ -41,8 +41,6 @@ body {
     background: linear-gradient(rgb(26, 181, 228), #F0f);
     clip-path: circle(20% at 10% 10%);
 }
-
-
 .container {
 
     position: relative;
